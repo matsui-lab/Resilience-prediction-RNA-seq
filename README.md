@@ -21,10 +21,10 @@ We compared the performance of the following models:
 ## Results
 Across both MSBB and ROSMAP datasets, the SVR model demonstrated the best performance in predicting resilience scores.
 <div style="float: left; width: 50%;">
-    <img src="MSBB-r2.png" alt="Model Performance MSBB" title="Model Performance MSBB" width="50%">
+    <img src="MSBB-r2.png" alt="Model Performance MSBB" title="Model Performance MSBB" width="45%">
 </div>
-<div style="float: left; width: 50%;">
-    <img src="ROSMAP-r2.png" alt="Model Performance ROSMAP" title="Model Performance ROSMAP" width="50%">
+<div style="float: right; width: 50%;">
+    <img src="ROSMAP-r2.png" alt="Model Performance ROSMAP" title="Model Performance ROSMAP" width="45%">
 </div>
 
 ## Repository Contents
