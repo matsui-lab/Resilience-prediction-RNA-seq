@@ -3,11 +3,11 @@
 This repository contains scripts used in the study for predicting the resilience score of Alzheimer's disease patients using RNA-seq data and various machine learning models. The study aims to build and compare regression models to accurately predict resilience scores, using data from the MSBB and ROSMAP cohorts.
 
 ## Overview
-In this research, we constructed regression models to predict resilience scores in Alzheimer’s disease patients. The resilience score is defined as the difference between the observed cognitive score and the cognitive score predicted by a regression model built using pathology scores.
+This repository contains scripts used in the study for predicting the resilience score of Alzheimer's disease patients using RNA-seq data and various machine learning models. The study aims to build and compare regression models to accurately predict resilience scores, using data from the MSBB and ROSMAP cohorts.
 
 ## Data
-Cohorts Used: MSBB (Mount Sinai Brain Bank) and ROSMAP (Religious Orders Study and Memory and Aging Project).
-Resilience Score Calculation: The resilience score is derived by subtracting the cognitive score predicted by a regression model (based on pathology scores) from the observed cognitive score.
+- Cohorts Used: MSBB (Mount Sinai Brain Bank) and ROSMAP (Religious Orders Study and Memory and Aging Project).
+- Resilience Score Calculation: The resilience score is derived by subtracting the cognitive score predicted by a regression model (based on pathology scores) from the observed cognitive score.
 
 ## Models
 We compared the performance of the following models:
