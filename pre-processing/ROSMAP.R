@@ -1,7 +1,7 @@
 rm(list=ls())
 options(stringsAsFactors=FALSE)
 
-path <- "/share1/kitani/data_from_first/resilience_study"
+path <- "/path/to"
 setwd(path)
 
 library(data.table)
@@ -9,7 +9,7 @@ library(ggplot2)
 library(dplyr)
 library(sva)
 
-out.dir <- "/out.dir.kitani"
+out.dir <- "/out"
 script.dir <- "/script"
 
 dir.create(paste0(path, out.dir), recursive = TRUE)
@@ -35,7 +35,7 @@ clinical.rosmap$norm_resilience_score <- scale(clinical.rosmap$resilience_score)
 clinical.rosmap$norm_resilience_score <- as.numeric(clinical.rosmap$norm_resilience_score)
 clinical.rosmap$cohort <- "rosmap"
 
-write.csv(clinical.rosmap, "out.dir.kitani/rosmap_metadata_withresilience.csv", quote = FALSE)
+write.csv(clinical.rosmap, "out/rosmap_metadata_withresilience.csv", quote = FALSE)
 
 #####################
 # PCA and Gene Correlation
@@ -52,7 +52,7 @@ clinical.rosmap_sorted <- clinical.rosmap_filtered[order(clinical.rosmap_filtere
 exprs_adjusted <- ComBat(dat = df_rosmap_sorted, batch = clinical.rosmap_sorted$notes, mod = NULL, par.prior = TRUE, prior.plots = FALSE)
 
 df_expr_adjusted <- as.data.frame(exprs_adjusted)
-write.csv(df_expr_adjusted, "out.dir.kitani/expr_rosmap_combat.csv", quote = FALSE)
+write.csv(df_expr_adjusted, "out/expr_rosmap_combat.csv", quote = FALSE)
 
 pca_result <- prcomp(t(exprs_adjusted), scale = TRUE)
 pca_data <- as.data.frame(pca_result$x)
