@@ -15,12 +15,12 @@ config = {
     "batch_size": 16,
     "rand_seed": 52,
     "result_dir": {
-        "msbb": "/share1/kitani/resilience_brain/out/results/linear_regression_cv_msbb_all/",
-        "rosmap": "/share1/kitani/resilience_brain/out/results/linear_regression_cv_rosmap_all/"
+        "msbb": "/path/to/results/linear_regression_cv_msbb_all/",
+        "rosmap": "/path/to/results/linear_regression_cv_rosmap_all/"
     },
     "model_dir": {
-        "msbb": "/share1/kitani/resilience_brain/out/models/linear_regression_cv_msbb_all/",
-        "rosmap": "/share1/kitani/resilience_brain/out/models/linear_regression_cv_rosmap_all/"
+        "msbb": "/path/to/models/linear_regression_cv_msbb_all/",
+        "rosmap": "/path/to/models/linear_regression_cv_rosmap_all/"
     }
 }
 
@@ -36,18 +36,18 @@ for key in config['result_dir']:
 # List of CSV files for both datasets
 csv_files = {
     "msbb": [
-        "/share1/kitani/data_from_first/resilience_study/out.dir.kitani/exp_msbb_with.resilience_cor_seqbatch_1000.csv",
-        "/share1/kitani/data_from_first/resilience_study/out.dir.kitani/exp_msbb_with.resilience_cor_seqbatch_2000.csv",
-        "/share1/kitani/data_from_first/resilience_study/out.dir.kitani/exp_msbb_with.resilience_cor_seqbatch_3000.csv",
-        "/share1/kitani/data_from_first/resilience_study/out.dir.kitani/exp_msbb_with.resilience_cor_seqbatch_4000.csv",
-        "/share1/kitani/data_from_first/resilience_study/out.dir.kitani/exp_msbb_with.resilience_cor_seqbatch_5000.csv"
+        "/path/to/exp_msbb_with.resilience_cor_seqbatch_1000.csv",
+        "/path/to/exp_msbb_with.resilience_cor_seqbatch_2000.csv",
+        "/path/to/exp_msbb_with.resilience_cor_seqbatch_3000.csv",
+        "/path/to/exp_msbb_with.resilience_cor_seqbatch_4000.csv",
+        "/path/to/exp_msbb_with.resilience_cor_seqbatch_5000.csv"
     ],
     "rosmap": [
-        "/share1/kitani/data_from_first/resilience_study/out.dir.kitani/exp_rosmap_with.resilience_cor_seqbatch_1000.csv",
-        "/share1/kitani/data_from_first/resilience_study/out.dir.kitani/exp_rosmap_with.resilience_cor_seqbatch_2000.csv",
-        "/share1/kitani/data_from_first/resilience_study/out.dir.kitani/exp_rosmap_with.resilience_cor_seqbatch_3000.csv",
-        "/share1/kitani/data_from_first/resilience_study/out.dir.kitani/exp_rosmap_with.resilience_cor_seqbatch_4000.csv",
-        "/share1/kitani/data_from_first/resilience_study/out.dir.kitani/exp_rosmap_with.resilience_cor_seqbatch_5000.csv"
+        "/path/to/exp_rosmap_with.resilience_cor_seqbatch_1000.csv",
+        "/path/to/exp_rosmap_with.resilience_cor_seqbatch_2000.csv",
+        "/path/to/exp_rosmap_with.resilience_cor_seqbatch_3000.csv",
+        "/path/to/exp_rosmap_with.resilience_cor_seqbatch_4000.csv",
+        "/path/to/exp_rosmap_with.resilience_cor_seqbatch_5000.csv"
     ]
 }
 
