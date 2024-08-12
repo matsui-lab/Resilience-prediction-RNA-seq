@@ -1,7 +1,7 @@
 rm(list=ls())
 options(stringsAsFactors=FALSE)
 
-path <- "/share1/kitani/data_from_first/resilience_study"
+path <- "/path/to"
 setwd(path)
 
 library(data.table)
@@ -9,7 +9,7 @@ library(ggplot2)
 library(dplyr)
 library(sva)
 
-out.dir <- "/out.dir.kitani"
+out.dir <- "/out"
 script.dir <- "/script"
 
 dir.create(paste0(path, out.dir), recursive = TRUE)
@@ -35,7 +35,7 @@ clinical.msbb$norm_resilience_score <- scale(clinical.msbb$resilience_score)
 clinical.msbb$norm_resilience_score <- as.numeric(clinical.msbb$norm_resilience_score)
 clinical.msbb$cohort <- "MSBB"
 
-write.csv(clinical.msbb, "out.dir.kitani/msbb_metadata_withresilience.csv", quote = FALSE)
+write.csv(clinical.msbb, "out/msbb_metadata_withresilience.csv", quote = FALSE)
 
 #####################
 # PCA and Gene Correlation
