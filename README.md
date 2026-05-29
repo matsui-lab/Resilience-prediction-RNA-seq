@@ -122,10 +122,7 @@ Core packages used across scripts include:
 
 `numpy`, `pandas`, `scikit-learn`, `matplotlib`, `joblib`, `xgboost`, `shap`.
 
-## Notes on public release
+## Notes 
 
-- Absolute local paths were replaced with `/path/to/...` placeholders.
-- Japanese comments and internal scratch comments were removed.
-- Scripts that were superseded by the final manuscript analyses or represented unused sensitivity/archived analyses were not included in this cleaned release bundle.
 - Data files are not included. Access to ROSMAP, MSBB, and ADNI source data must follow each cohort's data-use requirements.
 
